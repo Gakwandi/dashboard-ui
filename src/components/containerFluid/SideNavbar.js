@@ -11,14 +11,14 @@ function SideNavbar({children}) {
                   linksDetails.map((item, i) =>{
                     return(
                       <li class="nav-item" key={i}>
-                        <a class="nav-link" href="#"><i className={`${item.icon} mx-2`}></i>{item.title}</a>
+                        <a class="nav-link" href={item.link}><i className={`${item.icon} mx-2`}></i>{item.title}</a>
                       </li>
                     );
                   })
                 }
               </ul>
           </div>
-          <div className="col-md-8">
+          <div className="col-md-8 ml-md-4" style={{top:"80px"}}>
             {children}
           </div>
         </div>

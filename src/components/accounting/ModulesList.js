@@ -1,4 +1,4 @@
-const linksDetails = [{
+const ModulesList = [{
     "title": "Comptes Comptables",
     "icon": "fa fa-home",
     "desc": "Comptes Comptables"
@@ -28,4 +28,4 @@ const linksDetails = [{
     "desc": "Annortissement"
 }];
 
-export default linksDetails;
+export default ModulesList;

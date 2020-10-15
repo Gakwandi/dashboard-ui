@@ -1,5 +1,5 @@
 import React from 'react';
-import linksDetails from './LinksDetails';
+import ModulesList from './ModulesList';
 import TopNavbar from '../containerFluid/TopNavbar';
 import SideNavbar from '../containerFluid/SideNavbar';
 
@@ -16,9 +16,9 @@ function Accounting() {
                 </nav>
                 <div className="row">
                 {
-                    linksDetails.map((item, i) => {
+                    ModulesList.map((item, i) => {
                         return(
-                            <div className="col-3 mt-3">
+                            <div className="col-3 mt-3" key={i}>
                                 <div className="card text-center">
                                     <div className="card-header bg-success text-white">
                                         {item.title}
@@ -26,7 +26,7 @@ function Accounting() {
                                     <div className="card-body">
                                         <i className={`${item.icon} fontText`}/>
                                         <br/>
-                                        {item.desc}
+                                        <p className="desc mt-3">{item.desc}</p>
                                     </div>
                                 </div>
                             </div>
